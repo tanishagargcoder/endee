@@ -1,55 +1,100 @@
 🧠 IntelliResolve
-AI-Powered Complaint Clustering & Semantic Search using Endee Vector Database
+AI-Powered Complaint Clustering & Semantic Search using Endee Vector Architecture
+
 🚀 Project Overview
+IntelliResolve is a production-style AI complaint intelligence system that performs:
 
-IntelliResolve is an AI-driven complaint intelligence system that:
+Semantic similarity search over customer complaints
 
-Performs semantic search over customer complaints
+Automatic complaint clustering
 
-Groups similar complaints using clustering
+Issue trend detection
 
-Detects recurring issue trends
+Performance monitoring
 
-Demonstrates vector database integration using Endee
+Interactive dashboard visualization
 
-This project uses Endee as the vector database architecture layer and implements semantic similarity search over embedded complaint data.
+The system is architected around an Endee-style vector database layer, demonstrating how embedding-based retrieval systems operate in modern AI applications.
 
 🎯 Problem Statement
+Organizations receive thousands of customer complaints daily. Traditional keyword-based systems fail to:
 
-Organizations receive thousands of complaints daily. Traditional keyword-based search fails to capture meaning-based similarity.
+Detect semantically similar issues
 
-This system solves:
+Group related complaints
 
-Similar complaint detection
+Identify recurring problem patterns
 
-Issue clustering
+Scale effectively
 
-Trend identification
+IntelliResolve solves this using vector embeddings + similarity search + clustering, aligned with modern AI retrieval systems.
 
-Semantic retrieval
-
-🏗️ Architecture
-
-Complaint Text
-
-SentenceTransformer Embeddings
-
-Insert into Endee Vector Layer
-
-Query Embedding
-
+🏗 System Architecture
+User Query
+   ↓
+SentenceTransformer Embedding
+   ↓
+Endee Vector Layer (EndeeClient Abstraction)
+   ↓
 Vector Similarity Search
+   ↓
+Cluster Analysis (KMeans)
+   ↓
+Streamlit Dashboard
 
-Ranked Results
+🧩 Core Components
+1️⃣ Embedding Generation
 
-🛠 Tech Stack
+Uses sentence-transformers to convert complaints into dense semantic vectors.
 
-Python
+2️⃣ Endee Vector Layer
 
-SentenceTransformers
+Implements an EndeeClient abstraction that simulates vector insertion and retrieval aligned with Endee’s architecture-first vector database approach.
 
-Scikit-learn
+3️⃣ Semantic Search
 
-Streamlit
+Performs cosine similarity ranking over embedded complaint vectors.
 
-Endee Vector DB (Architecture-based integration)
+4️⃣ Complaint Clustering
+
+Uses KMeans clustering to group semantically similar issues.
+
+5️⃣ Dashboard Visualization
+
+Built using Streamlit, including:
+
+Semantic search interface
+
+Performance timing
+
+Similarity score progress bars
+
+Issue distribution charts
+
+CSV export functionality
+
+📊 Features
+
+🔍 Meaning-based complaint search
+
+📂 Automatic issue clustering
+
+📈 Issue distribution visualization
+
+⚡ Search performance timing
+
+📥 CSV export of results
+
+➕ Live complaint similarity analysis
+
+📋 Sample dataset viewer
+
+🏷 Auto cluster labeling
+
+📦 Scalable dataset simulation
+
+
+
+
+IntelliResolve is a semantic complaint intelligence system built on Endee vector architecture principles.
+The project demonstrates embedding-based similarity search, clustering, trend detection, and modular vector database abstraction aligned with Endee’s design philosophy.
